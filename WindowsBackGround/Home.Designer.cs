@@ -306,19 +306,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pctrbx4;
-        private System.Windows.Forms.PictureBox pctrbx3;
-        private System.Windows.Forms.PictureBox pctrbx2;
-        private System.Windows.Forms.PictureBox pctrbx1;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker4;
-        private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker3;
-        private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker2;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb1;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb2;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb4;
-        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb3;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.PictureBox pctrbx4;
+        public System.Windows.Forms.PictureBox pctrbx3;
+        public System.Windows.Forms.PictureBox pctrbx2;
+        public System.Windows.Forms.PictureBox pctrbx1;
+        public System.Windows.Forms.ColorDialog colorDialog1;
+        public Bunifu.Framework.UI.BunifuFlatButton btnColorPicker1;
+        public Bunifu.Framework.UI.BunifuFlatButton btnColorPicker4;
+        public Bunifu.Framework.UI.BunifuFlatButton btnColorPicker3;
+        public Bunifu.Framework.UI.BunifuFlatButton btnColorPicker2;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblRgb1;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblRgb2;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblRgb4;
+        public Bunifu.Framework.UI.BunifuCustomLabel lblRgb3;
     }
 }

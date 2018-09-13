@@ -24,6 +24,7 @@ namespace WindowsBackGround
         {
             SelectedButton(btnHome.Width, btnHome.Left);
             DocksControl(btnHome.Name, home, settings);
+            PictureBoxAndLabelLoader();
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -60,8 +61,25 @@ namespace WindowsBackGround
             DocksControl(btnSettings.Name, home, settings);
         }
 
+        public void PictureBoxAndLabelLoader()
+        {
+            home.pctrbx1.BackColor = Properties.Settings.Default.color1;
+            home.pctrbx2.BackColor = Properties.Settings.Default.color2;
+            home.pctrbx3.BackColor = Properties.Settings.Default.color3;
+            home.pctrbx4.BackColor = Properties.Settings.Default.color4;
+            home.lblRgb1.Text = "#" + Convert.ToString(Properties.Settings.Default.color1.ToArgb().ToString("X6"));
+            home.lblRgb2.Text = "#" + Convert.ToString(Properties.Settings.Default.color2.ToArgb().ToString("X6"));
+            home.lblRgb3.Text = "#" + Convert.ToString(Properties.Settings.Default.color3.ToArgb().ToString("X6"));
+            home.lblRgb4.Text = "#" + Convert.ToString(Properties.Settings.Default.color4.ToArgb().ToString("X6"));
+        }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
+            Properties.Settings.Default.color1 = home.pctrbx1.BackColor;
+            Properties.Settings.Default.color2 = home.pctrbx2.BackColor;
+            Properties.Settings.Default.color3 = home.pctrbx3.BackColor;
+            Properties.Settings.Default.color4 = home.pctrbx4.BackColor;
+            Properties.Settings.Default.Save();
             Application.Exit();
         }
     }
