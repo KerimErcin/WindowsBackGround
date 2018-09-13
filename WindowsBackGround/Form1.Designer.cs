@@ -39,9 +39,12 @@
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pnlSelect = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -51,7 +54,8 @@
             // 
             // pnlHeader
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.pnlHeader.Controls.Add(this.btnClose);
             this.pnlHeader.Controls.Add(this.bunifuCustomLabel1);
             this.pnlHeader.Controls.Add(this.pictureBox1);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -171,12 +175,33 @@
             // 
             // pnlSelect
             // 
-            this.pnlSelect.BackColor = System.Drawing.Color.DodgerBlue;
+            this.pnlSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
             this.pnlSelect.ForeColor = System.Drawing.Color.Coral;
             this.pnlSelect.Location = new System.Drawing.Point(15, 35);
             this.pnlSelect.Name = "pnlSelect";
             this.pnlSelect.Size = new System.Drawing.Size(138, 6);
             this.pnlSelect.TabIndex = 0;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.pnlHeader;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.ImageActive = null;
+            this.btnClose.Location = new System.Drawing.Point(627, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(25, 25);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 3;
+            this.btnClose.TabStop = false;
+            this.btnClose.Zoom = 10;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Form1
             // 
@@ -196,6 +221,7 @@
             this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,6 +237,8 @@
         private System.Windows.Forms.Panel pnlContainer;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel pnlSelect;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuImageButton btnClose;
     }
 }
 

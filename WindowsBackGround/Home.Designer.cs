@@ -30,27 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pctrbx1 = new System.Windows.Forms.PictureBox();
-            this.pctrbx2 = new System.Windows.Forms.PictureBox();
-            this.pctrbx3 = new System.Windows.Forms.PictureBox();
-            this.pctrbx4 = new System.Windows.Forms.PictureBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
-            this.btnColorPicker1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnColorPicker4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnColorPicker3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnColorPicker2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnColorPicker1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pctrbx4 = new System.Windows.Forms.PictureBox();
+            this.pctrbx3 = new System.Windows.Forms.PictureBox();
+            this.pctrbx2 = new System.Windows.Forms.PictureBox();
+            this.pctrbx1 = new System.Windows.Forms.PictureBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.lblRgb1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblRgb2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblRgb3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblRgb4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbx1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbx2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbx3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbx3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbx2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbx1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuFlatButton2);
-            this.panel1.Controls.Add(this.bunifuFlatButton1);
+            this.panel1.Controls.Add(this.lblRgb4);
+            this.panel1.Controls.Add(this.lblRgb1);
+            this.panel1.Controls.Add(this.lblRgb3);
+            this.panel1.Controls.Add(this.lblRgb2);
+            this.panel1.Controls.Add(this.btnColorPicker4);
+            this.panel1.Controls.Add(this.btnColorPicker3);
             this.panel1.Controls.Add(this.btnColorPicker2);
             this.panel1.Controls.Add(this.btnColorPicker1);
             this.panel1.Controls.Add(this.pctrbx4);
@@ -63,75 +70,78 @@
             this.panel1.Size = new System.Drawing.Size(212, 378);
             this.panel1.TabIndex = 0;
             // 
-            // pctrbx1
+            // btnColorPicker4
             // 
-            this.pctrbx1.Location = new System.Drawing.Point(15, 13);
-            this.pctrbx1.Name = "pctrbx1";
-            this.pctrbx1.Size = new System.Drawing.Size(182, 51);
-            this.pctrbx1.TabIndex = 0;
-            this.pctrbx1.TabStop = false;
+            this.btnColorPicker4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColorPicker4.BorderRadius = 5;
+            this.btnColorPicker4.ButtonText = "";
+            this.btnColorPicker4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnColorPicker4.DisabledColor = System.Drawing.Color.Gray;
+            this.btnColorPicker4.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnColorPicker4.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnColorPicker4.Iconimage")));
+            this.btnColorPicker4.Iconimage_right = null;
+            this.btnColorPicker4.Iconimage_right_Selected = null;
+            this.btnColorPicker4.Iconimage_Selected = null;
+            this.btnColorPicker4.IconMarginLeft = 0;
+            this.btnColorPicker4.IconMarginRight = 0;
+            this.btnColorPicker4.IconRightVisible = true;
+            this.btnColorPicker4.IconRightZoom = 0D;
+            this.btnColorPicker4.IconVisible = true;
+            this.btnColorPicker4.IconZoom = 45D;
+            this.btnColorPicker4.IsTab = false;
+            this.btnColorPicker4.Location = new System.Drawing.Point(155, 316);
+            this.btnColorPicker4.Name = "btnColorPicker4";
+            this.btnColorPicker4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker4.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnColorPicker4.selected = false;
+            this.btnColorPicker4.Size = new System.Drawing.Size(35, 35);
+            this.btnColorPicker4.TabIndex = 6;
+            this.btnColorPicker4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnColorPicker4.Textcolor = System.Drawing.Color.White;
+            this.btnColorPicker4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker4.Click += new System.EventHandler(this.btnColorPicker4_Click);
             // 
-            // pctrbx2
+            // btnColorPicker3
             // 
-            this.pctrbx2.Location = new System.Drawing.Point(15, 110);
-            this.pctrbx2.Name = "pctrbx2";
-            this.pctrbx2.Size = new System.Drawing.Size(182, 51);
-            this.pctrbx2.TabIndex = 1;
-            this.pctrbx2.TabStop = false;
-            // 
-            // pctrbx3
-            // 
-            this.pctrbx3.Location = new System.Drawing.Point(15, 207);
-            this.pctrbx3.Name = "pctrbx3";
-            this.pctrbx3.Size = new System.Drawing.Size(182, 51);
-            this.pctrbx3.TabIndex = 2;
-            this.pctrbx3.TabStop = false;
-            // 
-            // pctrbx4
-            // 
-            this.pctrbx4.Location = new System.Drawing.Point(15, 304);
-            this.pctrbx4.Name = "pctrbx4";
-            this.pctrbx4.Size = new System.Drawing.Size(182, 51);
-            this.pctrbx4.TabIndex = 3;
-            this.pctrbx4.TabStop = false;
-            // 
-            // btnColorPicker1
-            // 
-            this.btnColorPicker1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.btnColorPicker1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnColorPicker1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnColorPicker1.BorderRadius = 5;
-            this.btnColorPicker1.ButtonText = "";
-            this.btnColorPicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnColorPicker1.DisabledColor = System.Drawing.Color.Gray;
-            this.btnColorPicker1.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnColorPicker1.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnColorPicker1.Iconimage")));
-            this.btnColorPicker1.Iconimage_right = null;
-            this.btnColorPicker1.Iconimage_right_Selected = null;
-            this.btnColorPicker1.Iconimage_Selected = null;
-            this.btnColorPicker1.IconMarginLeft = 0;
-            this.btnColorPicker1.IconMarginRight = 0;
-            this.btnColorPicker1.IconRightVisible = true;
-            this.btnColorPicker1.IconRightZoom = 0D;
-            this.btnColorPicker1.IconVisible = true;
-            this.btnColorPicker1.IconZoom = 50D;
-            this.btnColorPicker1.IsTab = false;
-            this.btnColorPicker1.Location = new System.Drawing.Point(151, 18);
-            this.btnColorPicker1.Name = "btnColorPicker1";
-            this.btnColorPicker1.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.btnColorPicker1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.btnColorPicker1.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnColorPicker1.selected = false;
-            this.btnColorPicker1.Size = new System.Drawing.Size(40, 40);
-            this.btnColorPicker1.TabIndex = 1;
-            this.btnColorPicker1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnColorPicker1.Textcolor = System.Drawing.Color.White;
-            this.btnColorPicker1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColorPicker3.BorderRadius = 5;
+            this.btnColorPicker3.ButtonText = "";
+            this.btnColorPicker3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnColorPicker3.DisabledColor = System.Drawing.Color.Gray;
+            this.btnColorPicker3.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnColorPicker3.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnColorPicker3.Iconimage")));
+            this.btnColorPicker3.Iconimage_right = null;
+            this.btnColorPicker3.Iconimage_right_Selected = null;
+            this.btnColorPicker3.Iconimage_Selected = null;
+            this.btnColorPicker3.IconMarginLeft = 0;
+            this.btnColorPicker3.IconMarginRight = 0;
+            this.btnColorPicker3.IconRightVisible = true;
+            this.btnColorPicker3.IconRightZoom = 0D;
+            this.btnColorPicker3.IconVisible = true;
+            this.btnColorPicker3.IconZoom = 45D;
+            this.btnColorPicker3.IsTab = false;
+            this.btnColorPicker3.Location = new System.Drawing.Point(155, 219);
+            this.btnColorPicker3.Name = "btnColorPicker3";
+            this.btnColorPicker3.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker3.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnColorPicker3.selected = false;
+            this.btnColorPicker3.Size = new System.Drawing.Size(35, 35);
+            this.btnColorPicker3.TabIndex = 5;
+            this.btnColorPicker3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnColorPicker3.Textcolor = System.Drawing.Color.White;
+            this.btnColorPicker3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker3.Click += new System.EventHandler(this.btnColorPicker3_Click);
             // 
             // btnColorPicker2
             // 
-            this.btnColorPicker2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.btnColorPicker2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnColorPicker2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
             this.btnColorPicker2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnColorPicker2.BorderRadius = 5;
             this.btnColorPicker2.ButtonText = "";
@@ -147,85 +157,134 @@
             this.btnColorPicker2.IconRightVisible = true;
             this.btnColorPicker2.IconRightZoom = 0D;
             this.btnColorPicker2.IconVisible = true;
-            this.btnColorPicker2.IconZoom = 50D;
+            this.btnColorPicker2.IconZoom = 45D;
             this.btnColorPicker2.IsTab = false;
-            this.btnColorPicker2.Location = new System.Drawing.Point(151, 115);
+            this.btnColorPicker2.Location = new System.Drawing.Point(155, 122);
             this.btnColorPicker2.Name = "btnColorPicker2";
-            this.btnColorPicker2.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.btnColorPicker2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
+            this.btnColorPicker2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
             this.btnColorPicker2.OnHoverTextColor = System.Drawing.Color.White;
             this.btnColorPicker2.selected = false;
-            this.btnColorPicker2.Size = new System.Drawing.Size(40, 40);
+            this.btnColorPicker2.Size = new System.Drawing.Size(35, 35);
             this.btnColorPicker2.TabIndex = 4;
             this.btnColorPicker2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnColorPicker2.Textcolor = System.Drawing.Color.White;
             this.btnColorPicker2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker2.Click += new System.EventHandler(this.btnColorPicker2_Click);
             // 
-            // bunifuFlatButton1
+            // btnColorPicker1
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 5;
-            this.bunifuFlatButton1.ButtonText = "";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 50D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(151, 212);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(40, 40);
-            this.bunifuFlatButton1.TabIndex = 5;
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnColorPicker1.BorderRadius = 5;
+            this.btnColorPicker1.ButtonText = "";
+            this.btnColorPicker1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnColorPicker1.DisabledColor = System.Drawing.Color.Gray;
+            this.btnColorPicker1.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnColorPicker1.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnColorPicker1.Iconimage")));
+            this.btnColorPicker1.Iconimage_right = null;
+            this.btnColorPicker1.Iconimage_right_Selected = null;
+            this.btnColorPicker1.Iconimage_Selected = null;
+            this.btnColorPicker1.IconMarginLeft = 0;
+            this.btnColorPicker1.IconMarginRight = 0;
+            this.btnColorPicker1.IconRightVisible = true;
+            this.btnColorPicker1.IconRightZoom = 0D;
+            this.btnColorPicker1.IconVisible = true;
+            this.btnColorPicker1.IconZoom = 45D;
+            this.btnColorPicker1.IsTab = false;
+            this.btnColorPicker1.Location = new System.Drawing.Point(156, 25);
+            this.btnColorPicker1.Name = "btnColorPicker1";
+            this.btnColorPicker1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnColorPicker1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnColorPicker1.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnColorPicker1.selected = false;
+            this.btnColorPicker1.Size = new System.Drawing.Size(35, 35);
+            this.btnColorPicker1.TabIndex = 1;
+            this.btnColorPicker1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnColorPicker1.Textcolor = System.Drawing.Color.White;
+            this.btnColorPicker1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColorPicker1.Click += new System.EventHandler(this.btnColorPicker1_Click);
             // 
-            // bunifuFlatButton2
+            // pctrbx4
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 5;
-            this.bunifuFlatButton2.ButtonText = "";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton2.Iconimage")));
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 50D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(151, 310);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.DodgerBlue;
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(56)))), ((int)(((byte)(98)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(40, 40);
-            this.bunifuFlatButton2.TabIndex = 6;
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pctrbx4.Location = new System.Drawing.Point(15, 308);
+            this.pctrbx4.Name = "pctrbx4";
+            this.pctrbx4.Size = new System.Drawing.Size(182, 51);
+            this.pctrbx4.TabIndex = 3;
+            this.pctrbx4.TabStop = false;
+            // 
+            // pctrbx3
+            // 
+            this.pctrbx3.Location = new System.Drawing.Point(15, 211);
+            this.pctrbx3.Name = "pctrbx3";
+            this.pctrbx3.Size = new System.Drawing.Size(182, 51);
+            this.pctrbx3.TabIndex = 2;
+            this.pctrbx3.TabStop = false;
+            // 
+            // pctrbx2
+            // 
+            this.pctrbx2.Location = new System.Drawing.Point(15, 114);
+            this.pctrbx2.Name = "pctrbx2";
+            this.pctrbx2.Size = new System.Drawing.Size(182, 51);
+            this.pctrbx2.TabIndex = 1;
+            this.pctrbx2.TabStop = false;
+            // 
+            // pctrbx1
+            // 
+            this.pctrbx1.Location = new System.Drawing.Point(15, 17);
+            this.pctrbx1.Name = "pctrbx1";
+            this.pctrbx1.Size = new System.Drawing.Size(182, 51);
+            this.pctrbx1.TabIndex = 0;
+            this.pctrbx1.TabStop = false;
+            // 
+            // colorDialog1
+            // 
+            this.colorDialog1.SolidColorOnly = true;
+            // 
+            // lblRgb1
+            // 
+            this.lblRgb1.AutoSize = true;
+            this.lblRgb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb1.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb1.Location = new System.Drawing.Point(17, 35);
+            this.lblRgb1.Name = "lblRgb1";
+            this.lblRgb1.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb1.TabIndex = 7;
+            // 
+            // lblRgb2
+            // 
+            this.lblRgb2.AutoSize = true;
+            this.lblRgb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb2.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb2.Location = new System.Drawing.Point(17, 132);
+            this.lblRgb2.Name = "lblRgb2";
+            this.lblRgb2.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb2.TabIndex = 8;
+            // 
+            // lblRgb3
+            // 
+            this.lblRgb3.AutoSize = true;
+            this.lblRgb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb3.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb3.Location = new System.Drawing.Point(17, 230);
+            this.lblRgb3.Name = "lblRgb3";
+            this.lblRgb3.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb3.TabIndex = 9;
+            // 
+            // lblRgb4
+            // 
+            this.lblRgb4.AutoSize = true;
+            this.lblRgb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb4.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb4.Location = new System.Drawing.Point(17, 326);
+            this.lblRgb4.Name = "lblRgb4";
+            this.lblRgb4.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb4.TabIndex = 10;
             // 
             // Home
             // 
@@ -236,10 +295,11 @@
             this.Name = "Home";
             this.Size = new System.Drawing.Size(656, 378);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbx1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbx2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctrbx3)).EndInit();
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbx3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbx2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctrbx1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,10 +312,13 @@
         private System.Windows.Forms.PictureBox pctrbx2;
         private System.Windows.Forms.PictureBox pctrbx1;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.ColorDialog colorDialog2;
         private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker1;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker4;
+        private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker3;
         private Bunifu.Framework.UI.BunifuFlatButton btnColorPicker2;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb2;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb4;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblRgb3;
     }
 }
