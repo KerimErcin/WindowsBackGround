@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblRgb4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblRgb1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblRgb3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lblRgb2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnColorPicker4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnColorPicker3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnColorPicker2 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -39,15 +43,16 @@
             this.pctrbx2 = new System.Windows.Forms.PictureBox();
             this.pctrbx1 = new System.Windows.Forms.PictureBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.lblRgb1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblRgb2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblRgb3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.lblRgb4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnRandomColor = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pnlPreview = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuCircleProgressbar1 = new Bunifu.Framework.UI.BunifuCircleProgressbar();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx1)).BeginInit();
+            this.pnlPreview.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -69,6 +74,50 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(212, 378);
             this.panel1.TabIndex = 0;
+            // 
+            // lblRgb4
+            // 
+            this.lblRgb4.AutoSize = true;
+            this.lblRgb4.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb4.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb4.Location = new System.Drawing.Point(17, 326);
+            this.lblRgb4.Name = "lblRgb4";
+            this.lblRgb4.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb4.TabIndex = 10;
+            // 
+            // lblRgb1
+            // 
+            this.lblRgb1.AutoSize = true;
+            this.lblRgb1.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb1.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb1.Location = new System.Drawing.Point(17, 35);
+            this.lblRgb1.Name = "lblRgb1";
+            this.lblRgb1.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb1.TabIndex = 7;
+            // 
+            // lblRgb3
+            // 
+            this.lblRgb3.AutoSize = true;
+            this.lblRgb3.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb3.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb3.Location = new System.Drawing.Point(17, 230);
+            this.lblRgb3.Name = "lblRgb3";
+            this.lblRgb3.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb3.TabIndex = 9;
+            // 
+            // lblRgb2
+            // 
+            this.lblRgb2.AutoSize = true;
+            this.lblRgb2.BackColor = System.Drawing.Color.Transparent;
+            this.lblRgb2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblRgb2.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblRgb2.Location = new System.Drawing.Point(17, 132);
+            this.lblRgb2.Name = "lblRgb2";
+            this.lblRgb2.Size = new System.Drawing.Size(0, 15);
+            this.lblRgb2.TabIndex = 8;
             // 
             // btnColorPicker4
             // 
@@ -242,55 +291,98 @@
             // 
             this.colorDialog1.SolidColorOnly = true;
             // 
-            // lblRgb1
+            // btnRandomColor
             // 
-            this.lblRgb1.AutoSize = true;
-            this.lblRgb1.BackColor = System.Drawing.Color.Transparent;
-            this.lblRgb1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRgb1.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblRgb1.Location = new System.Drawing.Point(17, 35);
-            this.lblRgb1.Name = "lblRgb1";
-            this.lblRgb1.Size = new System.Drawing.Size(0, 15);
-            this.lblRgb1.TabIndex = 7;
+            this.btnRandomColor.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnRandomColor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnRandomColor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRandomColor.BorderRadius = 5;
+            this.btnRandomColor.ButtonText = "Random Color";
+            this.btnRandomColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRandomColor.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRandomColor.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRandomColor.Iconimage = null;
+            this.btnRandomColor.Iconimage_right = null;
+            this.btnRandomColor.Iconimage_right_Selected = null;
+            this.btnRandomColor.Iconimage_Selected = null;
+            this.btnRandomColor.IconMarginLeft = 0;
+            this.btnRandomColor.IconMarginRight = 0;
+            this.btnRandomColor.IconRightVisible = true;
+            this.btnRandomColor.IconRightZoom = 0D;
+            this.btnRandomColor.IconVisible = true;
+            this.btnRandomColor.IconZoom = 90D;
+            this.btnRandomColor.IsTab = false;
+            this.btnRandomColor.Location = new System.Drawing.Point(231, 219);
+            this.btnRandomColor.Name = "btnRandomColor";
+            this.btnRandomColor.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.btnRandomColor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(37)))), ((int)(((byte)(77)))));
+            this.btnRandomColor.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRandomColor.selected = false;
+            this.btnRandomColor.Size = new System.Drawing.Size(168, 39);
+            this.btnRandomColor.TabIndex = 3;
+            this.btnRandomColor.Text = "Random Color";
+            this.btnRandomColor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRandomColor.Textcolor = System.Drawing.Color.White;
+            this.btnRandomColor.TextFont = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRandomColor.Click += new System.EventHandler(this.btnRandomColor_Click);
             // 
-            // lblRgb2
+            // pnlPreview
             // 
-            this.lblRgb2.AutoSize = true;
-            this.lblRgb2.BackColor = System.Drawing.Color.Transparent;
-            this.lblRgb2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRgb2.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblRgb2.Location = new System.Drawing.Point(17, 132);
-            this.lblRgb2.Name = "lblRgb2";
-            this.lblRgb2.Size = new System.Drawing.Size(0, 15);
-            this.lblRgb2.TabIndex = 8;
+            this.pnlPreview.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPreview.BackgroundImage")));
+            this.pnlPreview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlPreview.Controls.Add(this.bunifuCustomLabel1);
+            this.pnlPreview.Controls.Add(this.bunifuCircleProgressbar1);
+            this.pnlPreview.GradientBottomLeft = System.Drawing.Color.White;
+            this.pnlPreview.GradientBottomRight = System.Drawing.Color.White;
+            this.pnlPreview.GradientTopLeft = System.Drawing.Color.White;
+            this.pnlPreview.GradientTopRight = System.Drawing.Color.White;
+            this.pnlPreview.Location = new System.Drawing.Point(231, 17);
+            this.pnlPreview.Name = "pnlPreview";
+            this.pnlPreview.Quality = 10;
+            this.pnlPreview.Size = new System.Drawing.Size(393, 177);
+            this.pnlPreview.TabIndex = 4;
+            this.pnlPreview.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPreview_Paint);
             // 
-            // lblRgb3
+            // bunifuCircleProgressbar1
             // 
-            this.lblRgb3.AutoSize = true;
-            this.lblRgb3.BackColor = System.Drawing.Color.Transparent;
-            this.lblRgb3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRgb3.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblRgb3.Location = new System.Drawing.Point(17, 230);
-            this.lblRgb3.Name = "lblRgb3";
-            this.lblRgb3.Size = new System.Drawing.Size(0, 15);
-            this.lblRgb3.TabIndex = 9;
+            this.bunifuCircleProgressbar1.animated = true;
+            this.bunifuCircleProgressbar1.animationIterval = 5;
+            this.bunifuCircleProgressbar1.animationSpeed = 50;
+            this.bunifuCircleProgressbar1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgressbar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCircleProgressbar1.BackgroundImage")));
+            this.bunifuCircleProgressbar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F);
+            this.bunifuCircleProgressbar1.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuCircleProgressbar1.LabelVisible = false;
+            this.bunifuCircleProgressbar1.LineProgressThickness = 10;
+            this.bunifuCircleProgressbar1.LineThickness = 2;
+            this.bunifuCircleProgressbar1.Location = new System.Drawing.Point(144, 40);
+            this.bunifuCircleProgressbar1.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.bunifuCircleProgressbar1.MaxValue = 100;
+            this.bunifuCircleProgressbar1.Name = "bunifuCircleProgressbar1";
+            this.bunifuCircleProgressbar1.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgressbar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(95)))), ((int)(((byte)(197)))));
+            this.bunifuCircleProgressbar1.Size = new System.Drawing.Size(100, 100);
+            this.bunifuCircleProgressbar1.TabIndex = 0;
+            this.bunifuCircleProgressbar1.Value = 50;
             // 
-            // lblRgb4
+            // bunifuCustomLabel1
             // 
-            this.lblRgb4.AutoSize = true;
-            this.lblRgb4.BackColor = System.Drawing.Color.Transparent;
-            this.lblRgb4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRgb4.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblRgb4.Location = new System.Drawing.Point(17, 326);
-            this.lblRgb4.Name = "lblRgb4";
-            this.lblRgb4.Size = new System.Drawing.Size(0, 15);
-            this.lblRgb4.TabIndex = 10;
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 3);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(65, 21);
+            this.bunifuCustomLabel1.TabIndex = 5;
+            this.bunifuCustomLabel1.Text = "Preview";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.Controls.Add(this.pnlPreview);
+            this.Controls.Add(this.btnRandomColor);
             this.Controls.Add(this.panel1);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(656, 378);
@@ -300,6 +392,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctrbx1)).EndInit();
+            this.pnlPreview.ResumeLayout(false);
+            this.pnlPreview.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -320,5 +414,9 @@
         public Bunifu.Framework.UI.BunifuCustomLabel lblRgb2;
         public Bunifu.Framework.UI.BunifuCustomLabel lblRgb4;
         public Bunifu.Framework.UI.BunifuCustomLabel lblRgb3;
+        private Bunifu.Framework.UI.BunifuFlatButton btnRandomColor;
+        public Bunifu.Framework.UI.BunifuGradientPanel pnlPreview;
+        private Bunifu.Framework.UI.BunifuCircleProgressbar bunifuCircleProgressbar1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
     }
 }

@@ -63,14 +63,26 @@ namespace WindowsBackGround
 
         public void PictureBoxAndLabelLoader()
         {
+            //Picturebox BackColor
             home.pctrbx1.BackColor = Properties.Settings.Default.color1;
             home.pctrbx2.BackColor = Properties.Settings.Default.color2;
             home.pctrbx3.BackColor = Properties.Settings.Default.color3;
             home.pctrbx4.BackColor = Properties.Settings.Default.color4;
+            //Label Text
             home.lblRgb1.Text = "#" + Convert.ToString(Properties.Settings.Default.color1.ToArgb().ToString("X6"));
             home.lblRgb2.Text = "#" + Convert.ToString(Properties.Settings.Default.color2.ToArgb().ToString("X6"));
             home.lblRgb3.Text = "#" + Convert.ToString(Properties.Settings.Default.color3.ToArgb().ToString("X6"));
             home.lblRgb4.Text = "#" + Convert.ToString(Properties.Settings.Default.color4.ToArgb().ToString("X6"));
+            //Label BackColor
+            home.lblRgb1.BackColor = Properties.Settings.Default.color1;
+            home.lblRgb2.BackColor = Properties.Settings.Default.color2;
+            home.lblRgb3.BackColor = Properties.Settings.Default.color3;
+            home.lblRgb4.BackColor = Properties.Settings.Default.color4;
+            //GradiantPanel Load
+            home.pnlPreview.GradientBottomLeft = Properties.Settings.Default.color1;
+            home.pnlPreview.GradientBottomRight = Properties.Settings.Default.color2;
+            home.pnlPreview.GradientTopLeft = Properties.Settings.Default.color3;
+            home.pnlPreview.GradientTopRight = Properties.Settings.Default.color4;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
