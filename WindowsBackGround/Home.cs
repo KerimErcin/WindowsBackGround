@@ -16,7 +16,7 @@ namespace WindowsBackGround
         {
             InitializeComponent();
         }
-        Color test;
+
         private void btnColorPicker1_Click(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
