@@ -14,9 +14,11 @@ namespace WindowsBackGround
     {
         public Home()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
+        Image wp = null;
         private void btnColorPicker1_Click(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
@@ -114,14 +116,26 @@ namespace WindowsBackGround
             pnlPreview.GradientTopRight = pctrbx4.BackColor;
         }
 
-        private void Home_Load(object sender, EventArgs e)
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+            bunifuCircleProgressbar1.Visible = true;
+            workerSetBackgorund.RunWorkerAsync();
         }
 
-        private void pnlPreview_Paint(object sender, PaintEventArgs e)
-        {
+        private void workerSetBackgorund_DoWork(object sender, DoWorkEventArgs e)
+        {           
+            wp = ColorMaker.GenerateImage(bunifuColorTransition1, pctrbx1.BackColor, pctrbx2.BackColor, pctrbx3.BackColor, pctrbx4.BackColor);
+            ColorMaker.SetWallPaper(wp);
+        }
 
+        private void workerSetBackgorund_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            //
+        }
+
+        private void workerSetBackgorund_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            bunifuCircleProgressbar1.Visible = false;
         }
     }
 }
